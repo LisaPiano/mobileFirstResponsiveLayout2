@@ -89,7 +89,7 @@ Class and ID     Layout Styles
     height: 150px; 
     margin-top: 75px; 
     margin-left: 20.5%;
-    margin-bottom: 25px; 
+    margin-bottom: 15px; 
 }
 .childPort {
     padding: 0; 
@@ -210,6 +210,7 @@ Media Queries
 }
 .classLeft {
     width: 55%; 
+    margin-top: 30px; 
 }
 nav.hide {
     display: inline-block; 
@@ -225,9 +226,10 @@ nav.hide {
 }
 .repeat-list {
     font-size: 18px; 
+    width: 100%;
 }
 .repeat-list li {
-    padding: 20px; 
+    padding-right: 20px; 
 }
 .face-picture {
     width: 40%;
@@ -272,7 +274,7 @@ nav.hide {
          margin: 0;
     }
     .first-list li {
-        font-size; 12px; 
+        font-size: 12px; 
     }
     .try-relative {
         position: absolute; 
@@ -328,13 +330,11 @@ nav.hide {
     }
     .img-skills {
         height: 200px; 
-        width: 200x; 
+        width: 200px; 
     }
     .skills {
         margin-top: 900px; 
-    }
-    
-    
+    }  
 }
 
 
