@@ -1,0 +1,264 @@
+/*======================================================================
+Base Element Styles
+=======================================================================*/
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    text-align: center; 
+    background-color: lightgray; 
+    width: 100%; 
+    line-height: 1.6em; 
+}
+
+nav{
+    border: 4px solid green; 
+    font-size: 12px; 
+    margin-bottom: 2em; 
+}
+nav li {
+    border: 2px solid white; 
+    padding: 30px; 
+}
+p {
+    font-size: 18px; 
+}
+ul {
+    list-style-type: none; 
+}
+h2 {
+    font-size: 40px;
+    padding: 50px;
+}
+
+/*========================================================================
+Base Layout Styles
+===========================================================================*/
+
+.container {
+    margin: 25px;  
+    border: 2px solid red; 
+    width: 100%; 
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .home {
+      width: 100%; 
+  }
+
+  .main-list: {
+      display: inline-block; 
+  }
+
+.uppercase {
+    text-transform: uppercase; 
+    font-family: 'Karla', sans-serif;
+    font-size: 25px; 
+}
+.cap {
+    text-transform: capitalize;
+    font-size: 28px; 
+}
+.pic {
+    max-width: 100%; 
+    display: inline-block;
+    width: 350px; 
+    height: 200px; 
+}
+.name {
+    color: #ff6347;
+    font-size: 18px; 
+}
+.name, 
+.cap {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px; 
+}
+.paragraph {
+    display: inline-block; 
+}
+
+
+.footer {
+    display: inline-block; 
+    width: 100%;
+    border: 2px solid black; 
+    color: tomato; 
+    font-size: 25px; 
+}
+.classLeft {
+    float: left;
+    padding-left: 100px;  
+}
+.classRight {
+    float: right; 
+    padding-right: 100px;
+}
+.skills {
+    display: block; 
+    margin-left: 400px; 
+    width: 50%; 
+    border; 1px solid black;
+    height: 200px;
+    width: 350px; 
+}
+#contact{
+    border: 2px solid red; 
+}
+a:hover {
+    background-color: white; 
+}
+.hide {
+    display: none; 
+}
+
+/*========================================================================
+Layout Containers
+===========================================================================*/
+
+/*========================================================================
+Media Queries
+===========================================================================*/
+@media(min-width: 768px){
+    
+    body {
+        background-color: lightpink; 
+    }
+    
+.first-list li {
+    display: inline-block; 
+    font-size: 18px;  
+}
+.second-list li {
+    display: block; 
+    font-size: 18px; 
+}
+
+.mark,
+.travel,
+.photo {
+    width: 50%; 
+    float: left; 
+    display: inline-block;
+    padding-right: 15px; 
+}
+
+.search, 
+.spots,
+.calc {
+    width: 50%; 
+    float: right; 
+    display: inline-block; 
+    padding-left: 15px; 
+}
+
+
+.imageSkills {
+    border: 1px solid white;  
+}
+.classRight {
+    display: none; 
+}
+nav.hide {
+    display: inline-block; 
+    border: 4px solid green; 
+    padding-right: 0;  
+    text-align: right; 
+    float: right; 
+}
+
+.hide ul li {
+    font-size: 18px; 
+    display: inline; 
+}
+.repeat-list {
+    font-size: 18px; 
+}
+.face-picture {
+    width: 40%;
+    float: right; 
+    display: inline-block;
+    border: 2px solid red; 
+}
+.paragraph-change {
+    width: 50%;
+    float: left; 
+    display: inline-block; 
+    margin-top: 0; 
+    border: 2px solid darkblue; 
+}
+
+
+
+}
+
+/*========================================================================*/
+@media(min-width: 1024px){
+    
+    body {
+        background-color: lightgreen; 
+    }
+    .name {
+        position: absolute; 
+        left: 60px; 
+        top: 75px; 
+        font-size: 20px;
+        
+    }
+    .first-list {
+        position: relative; 
+         left: 200px; 
+    }
+    .first-list li {
+        font-size; 12px; 
+    }
+    .try-relative {
+        position: relative; 
+    }
+    .mark {
+        width: 33%; 
+        float: left; 
+        display: inline-block;
+        padding-right: 15px; 
+    }
+
+  .search {
+        width: 33%; 
+        float: left; 
+        display: inline-block;
+        padding-right: 15px; 
+    }  
+    .travel {
+        width: 33%; 
+        float: right; 
+        display: inline-block;
+        padding-right: 15px;  
+    }
+    .spots {
+        width: 33%; 
+        float: left; 
+        display: inline-block;
+        padding-right: 15px;  
+    }
+    .photo {
+        width: 33%; 
+        float: center; 
+        display: inline-block;
+        padding-right: 15px;  
+    }
+    .calc {
+        width: 33%; 
+        float: right; 
+        display: inline-block;
+        padding-right: 15px;  
+    }
+    
+}
+
+
+
+
