@@ -5,23 +5,26 @@
         <title>Mobile First Responsive Layout: Project 2</title>
         <link rel = "stylesheet" href = "css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">   
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">             
     </head>
 
     <body>
-    <div class="container clearfix">
-        <div class="home" id="home">
-            <h1 class="name"><strong>Lisa Walters</strong></h1>
-            <nav class="clearfix try-relative">
-                <ul class="first-list uppercase">
-                    <li><a href="#home"><strong>Home</strong></a></li>
-                    <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
-                    <li><a href="#skills"><strong>Skills in the Future</strong></a></li>
-                    <li><a href="#contact"><strong>Contact</strong></a></li>
-                </ul>
-            </nav>
-        </div>
-    
+        <div class="container clearfix">
+        
+            <div class="home" id="home">
+                <h1 class="name"><strong>Lisa Walters</strong></h1>
+                <nav class="clearfix try-relative">
+                    <ul class="first-list uppercase">
+                        <li><a href="#home"><strong>Home</strong></a></li>
+                        <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
+                        <li><a href="#skills"><strong>Skills in the Future</strong></a></li>
+                        <li><a href="#contact"><strong>Contact</strong></a></li>
+                    </ul>
+                </nav>
+            </div>
+
             
             <img src="css/images/responsive-layout-profile.png" class="pic face-picture" alt="Cute picture of a face" />
                 <div class="paragraph paragraph-change">
@@ -30,15 +33,10 @@
                     at Treehouse and am excited to put all my skills to use!</p>
                 </div>
         
-
-        <div class="portfolio uppercase clearfix">
-        </div>
-
-        <h2>Portfolio</h2>
-            
-    
+                <div class="divPortfolio">
+                    <h2 class="childPort uppercase" id="portfolio">Portfolio</h2>
+                </div>
         
-        <div class="main-list">
             <div class="mark">
                 <img src="css/images/portfolio-1.png" class="pic imgMarketing" alt="Picture of marketing">
                 <h3 class="cap">Marketing Page</h3>
@@ -64,8 +62,8 @@
             </div>    
             
             <div class="spots">       
-                <img src="css/images/portfolio-4.png" class="pic imageSpots" alt="Picture of fantastic spots">
-                <h3 class="cap">Map of Fantastic Spots</h3>
+                <img src="css/images/portfolio-4.png" class="pic imageSpots" alt="Picture of favorite spots">
+                <h3 class="cap">Map of Favorite Spots</h3>
                     <div class="paragraph">
                         <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
                     </div>
@@ -87,16 +85,15 @@
                         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
                     </div>
             </div>
-        </div>
-    
-         
         
-            <img src="css/images/strong_arm.png" class="pic skills " alt="Picture of arm">
-    
+            <div class="skills">
+                <img src="css/images/strong_arm.png" id="arm" alt="image of strong arm">
+                <h2 id="skills" class="uppercase">Skills in the Future</h2>
+            </div>
 
-            <div class="second-list">
+            <div class="second-list clearfix">
                 <ul class="uppercase">
-                    <li><HTML></li>
+                    <li>HTML</li>
                     <li>CSS</li>
                     <li>Beginner-JavaScript</li>
                     <li>Navigating the DOM</li>
@@ -106,17 +103,19 @@
             </div>
             
 
-        <div class="contact" id="contact">
-            <h2 class="uppercase" style="margin-left: 30px">Contact</h2>
-            <p>If you're interested in chatting or want more information about what I have been working on, I'd love to hear from you!</p>
-            <p>Phone +1 970-946-9729</p>
-            <p>Email <a href= "mailto: campi_l@fortlewis.edu">campi_l@fortlewis.edu</a></p>
-        </div>
+            <div class="contact clearfix" id="contact">
+                <h2 class="uppercase">Contact</h2>
+                <p>If you're interested in chatting or want more information about what I have been working on, I'd love to hear from you!</p>
+                <p>Phone +1 970-946-9729</p>
+                <p>Email <a href= "mailto: campi_l@fortlewis.edu">campi_l@fortlewis.edu</a></p>
+            </div>
 
-        <div class="footer">
+        
             <footer>
-                <p class="classLeft">Lisa Walters</p>
-                <p class="classRight"><a href="#home">Back to top</a></p>
+                <div class="footer clearfix">
+                    <p class="classLeft">Lisa Walters</p>
+                    <p class="classRight capitalize"><a href="#home">Back to top</a></p>
+                </div>
 
                 <nav class="hide"> 
                     <ul class="repeat-list uppercase">
@@ -127,10 +126,12 @@
                     </ul>
                 </nav>
             </footer>
-        </div>
+        
+
 
     
 
-    </div><!container-->
+
+        </div>
     </body>
 </html>

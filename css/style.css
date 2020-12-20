@@ -10,22 +10,22 @@ body {
     background-color: lightgray; 
     width: 100%; 
     line-height: 1.6em; 
+    font-family: 'PT Sans', sans-serif;
 }
 
 nav{
-    border: 4px solid green; 
     font-size: 12px; 
     margin-bottom: 2em; 
+    line-height: 4em;
 }
-nav li {
-    border: 2px solid white; 
-    padding: 30px; 
-}
+
 p {
     font-size: 18px; 
 }
+
 ul {
     list-style-type: none; 
+    padding: 0; 
 }
 h2 {
     font-size: 40px;
@@ -33,31 +33,24 @@ h2 {
 }
 
 /*========================================================================
-Base Layout Styles
+Class and ID     Layout Styles
 ===========================================================================*/
 
 .container {
     margin: 25px;  
-    border: 2px solid red; 
-    width: 100%; 
+    max-width: 100%; 
 }
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
-  .home {
-      width: 100%; 
-  }
 
-  .main-list: {
-      display: inline-block; 
-  }
-
+  
 .uppercase {
     text-transform: uppercase; 
-    font-family: 'Karla', sans-serif;
     font-size: 25px; 
+    font-family: 'PT Sans', sans-serif;
 }
 .cap {
     text-transform: capitalize;
@@ -69,46 +62,70 @@ Base Layout Styles
     width: 350px; 
     height: 200px; 
 }
+.face-picture {
+    width: 320px; 
+}
+#arm {
+    max-width: 100%; 
+    display: inline-block; 
+    width: 250px; 
+    height: 150px; 
+}
+
 .name {
     color: #ff6347;
-    font-size: 18px; 
 }
 .name, 
 .cap {
-    font-family: 'Roboto', sans-serif;
     font-size: 30px; 
 }
 .paragraph {
     display: inline-block; 
 }
 
+.divPortfolio {
+    position: relative;
+    width: 60%;
+    height: 150px; 
+    margin-top: 75px; 
+    margin-left: 20.5%;
+    margin-bottom: 25px; 
+}
+.childPort {
+    padding: 0; 
+}
+
+.skills {
+    height: 150px; 
+    margin-top: 100px; 
+    position: relative; 
+}
+#skills {
+    margin-top: 0; 
+    line-height: 1em; 
+}
+.second-list {
+    line-height: 3em; 
+    margin-top: 170px; 
+}
 
 .footer {
     display: inline-block; 
     width: 100%;
-    border: 2px solid black; 
     color: tomato; 
     font-size: 25px; 
 }
 .classLeft {
+    width:50%; 
     float: left;
-    padding-left: 100px;  
+    padding-left: 10px;  
 }
 .classRight {
+    width: 50%;  
     float: right; 
-    padding-right: 100px;
+    padding-right: 10px;
 }
-.skills {
-    display: block; 
-    margin-left: 400px; 
-    width: 50%; 
-    border; 1px solid black;
-    height: 200px;
-    width: 350px; 
-}
-#contact{
-    border: 2px solid red; 
-}
+    
 a:hover {
     background-color: white; 
 }
@@ -117,7 +134,7 @@ a:hover {
 }
 
 /*========================================================================
-Layout Containers
+Media Queries
 ===========================================================================*/
 
 /*========================================================================
@@ -132,40 +149,71 @@ Media Queries
 .first-list li {
     display: inline-block; 
     font-size: 18px;  
+    padding-right: 40px; 
 }
 .second-list li {
     display: block; 
     font-size: 18px; 
 }
+.divPortfolio {
+    margin-top: 250px;  
+}
+.skills {
+    margin-top: 1300px; 
+  
+}
 
-.mark,
-.travel,
+.mark {
+    width: 50%; 
+    float: left; 
+    display: inline-block;
+    padding-right: 15px; 
+}
+.search {
+    width: 50%; 
+    float: right; 
+    display: inline-block; 
+    padding-left: 15px; 
+}
+.travel {
+    width: 50%; 
+    float: left; 
+    display: inline-block;
+    padding-right: 15px; 
+    clear: both; 
+}
+.spots {
+    width: 50%; 
+    float: right; 
+    display: inline-block; 
+    padding-left: 15px; 
+}
 .photo {
     width: 50%; 
     float: left; 
     display: inline-block;
     padding-right: 15px; 
 }
-
-.search, 
-.spots,
 .calc {
     width: 50%; 
     float: right; 
     display: inline-block; 
-    padding-left: 15px; 
+    padding-left: 15px;  
 }
 
 
-.imageSkills {
-    border: 1px solid white;  
-}
 .classRight {
     display: none; 
 }
+.footer {
+    width: 30%; 
+}
+.classLeft {
+    width: 55%; 
+}
 nav.hide {
     display: inline-block; 
-    border: 4px solid green; 
+    width: 70%;  
     padding-right: 0;  
     text-align: right; 
     float: right; 
@@ -178,19 +226,24 @@ nav.hide {
 .repeat-list {
     font-size: 18px; 
 }
+.repeat-list li {
+    padding: 20px; 
+}
 .face-picture {
     width: 40%;
     float: right; 
     display: inline-block;
-    border: 2px solid red; 
 }
 .paragraph-change {
     width: 50%;
     float: left; 
     display: inline-block; 
     margin-top: 0; 
-    border: 2px solid darkblue; 
 }
+.footer {
+    position: relative; 
+}
+
 
 
 
@@ -202,22 +255,32 @@ nav.hide {
     body {
         background-color: lightgreen; 
     }
+    .home {
+        position: relative; 
+        height: 100px; 
+        width: 100%; 
+    }
     .name {
         position: absolute; 
         left: 60px; 
-        top: 75px; 
-        font-size: 20px;
-        
+        top: 0;
+        font-size: 20px; 
     }
     .first-list {
-        position: relative; 
+        position: absolute; 
          left: 200px; 
+         margin: 0;
     }
     .first-list li {
         font-size; 12px; 
     }
     .try-relative {
-        position: relative; 
+        position: absolute; 
+        top: 0; 
+        right: 0; 
+        margin: 0; 
+        height: 50px; 
+        width: 800px; 
     }
     .mark {
         width: 33%; 
@@ -228,25 +291,27 @@ nav.hide {
 
   .search {
         width: 33%; 
-        float: left; 
         display: inline-block;
         padding-right: 15px; 
+        float: left; 
     }  
     .travel {
         width: 33%; 
         float: right; 
+        clear: right; 
         display: inline-block;
         padding-right: 15px;  
     }
     .spots {
         width: 33%; 
         float: left; 
+        clear: left; 
         display: inline-block;
         padding-right: 15px;  
     }
     .photo {
         width: 33%; 
-        float: center; 
+        float: left; 
         display: inline-block;
         padding-right: 15px;  
     }
@@ -256,6 +321,19 @@ nav.hide {
         display: inline-block;
         padding-right: 15px;  
     }
+    .cl-skills {
+        background-color: yellow; 
+        width: 100%; 
+        margin-top: 0; 
+    }
+    .img-skills {
+        height: 200px; 
+        width: 200x; 
+    }
+    .skills {
+        margin-top: 900px; 
+    }
+    
     
 }
 
