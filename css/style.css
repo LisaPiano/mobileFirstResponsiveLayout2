@@ -10,7 +10,7 @@ body {
     background-color: lightgray; 
     width: 100%; 
     line-height: 1.6em; 
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav{
@@ -21,12 +21,14 @@ nav{
 
 p {
     font-size: 18px; 
+    padding-right: 50px; 
 }
 
 ul {
     list-style-type: none; 
     padding: 0; 
 }
+
 h2 {
     font-size: 40px;
     padding: 50px;
@@ -40,45 +42,52 @@ Class and ID     Layout Styles
     margin: 25px;  
     max-width: 100%; 
 }
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  
 .uppercase {
     text-transform: uppercase; 
-    font-size: 25px; 
-    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
 }
+
 .cap {
     text-transform: capitalize;
     font-size: 28px; 
+    font-family: 'Indie Flower', cursive;
 }
+
 .pic {
     max-width: 100%; 
     display: inline-block;
     width: 350px; 
-    height: 200px; 
 }
+
 .face-picture {
-    width: 320px; 
+    width: 350px;
+    margin-right: 20px; 
 }
+
 #arm {
     max-width: 100%; 
     display: inline-block; 
-    width: 250px; 
-    height: 150px; 
+}
+.strong-arm {
+    width: 40%; 
 }
 
 .name {
     color: #ff6347;
 }
+
 .name, 
 .cap {
     font-size: 30px; 
 }
+
 .paragraph {
     display: inline-block; 
 }
@@ -91,6 +100,7 @@ Class and ID     Layout Styles
     margin-left: 20.5%;
     margin-bottom: 15px; 
 }
+
 .childPort {
     padding: 0; 
 }
@@ -100,13 +110,19 @@ Class and ID     Layout Styles
     margin-top: 100px; 
     position: relative; 
 }
+
 #skills {
     margin-top: 0; 
     line-height: 1em; 
 }
+
 .second-list {
     line-height: 3em; 
     margin-top: 170px; 
+}
+
+#skills-list {
+    padding: 8%; 
 }
 
 .footer {
@@ -115,20 +131,21 @@ Class and ID     Layout Styles
     color: tomato; 
     font-size: 25px; 
 }
+
 .classLeft {
     width:50%; 
-    float: left;
-    padding-left: 10px;  
+    float: left;  
 }
+
 .classRight {
     width: 50%;  
     float: right; 
-    padding-right: 10px;
 }
     
 a:hover {
     background-color: white; 
 }
+
 .hide {
     display: none; 
 }
@@ -145,108 +162,102 @@ Media Queries
     body {
         background-color: lightpink; 
     }
+
+    #face {
+        width: 50%; 
+        float: right; 
+    }
+
+    .paragraph-change {
+        width: 50%;
+        float: left; 
+        display: inline-block; 
+        margin-top: 0; 
+    } 
     
 .first-list li {
     display: inline-block; 
     font-size: 18px;  
     padding-right: 40px; 
 }
+
 .second-list li {
     display: block; 
     font-size: 18px; 
 }
+
 .divPortfolio {
-    margin-top: 250px;  
+    margin-top: 350px;  
 }
+
 .skills {
     margin-top: 1300px; 
-  
 }
 
 .mark {
     width: 50%; 
     float: left; 
     display: inline-block;
-    padding-right: 15px; 
 }
+
 .search {
     width: 50%; 
     float: right; 
     display: inline-block; 
-    padding-left: 15px; 
 }
+
 .travel {
     width: 50%; 
     float: left; 
     display: inline-block;
-    padding-right: 15px; 
     clear: both; 
 }
+
 .spots {
     width: 50%; 
     float: right; 
     display: inline-block; 
-    padding-left: 15px; 
 }
+   
 .photo {
     width: 50%; 
     float: left; 
     display: inline-block;
-    padding-right: 15px; 
 }
+
 .calc {
     width: 50%; 
     float: right; 
-    display: inline-block; 
-    padding-left: 15px;  
+    display: inline-block;   
 }
-
 
 .classRight {
     display: none; 
 }
-.footer {
-    width: 30%; 
-}
 .classLeft {
-    width: 55%; 
-    margin-top: 30px; 
-}
-nav.hide {
-    display: inline-block; 
-    width: 70%;  
-    padding-right: 0;  
-    text-align: right; 
-    float: right; 
-}
-
-.hide ul li {
-    font-size: 18px; 
-    display: inline; 
+    width: 60%; 
+    margin-top: 40px; 
 }
 .repeat-list {
-    font-size: 18px; 
-    width: 100%;
+    display: inline-block; 
 }
-.repeat-list li {
+
+.footer {
+    width: 26%; 
+    float: left; 
+}
+
+.hide {
+    display: inline-block; 
+    width: 74%; 
+    float: right; 
+}
+
+.repeat-list li{
+    display: inline; 
+    font-size: 18px; 
     padding-right: 20px; 
 }
-.face-picture {
-    width: 40%;
-    float: right; 
-    display: inline-block;
-}
-.paragraph-change {
-    width: 50%;
-    float: left; 
-    display: inline-block; 
-    margin-top: 0; 
-}
-.footer {
-    position: relative; 
-}
-
-
 
 
 }
@@ -257,25 +268,30 @@ nav.hide {
     body {
         background-color: lightgreen; 
     }
+
     .home {
         position: relative; 
         height: 100px; 
         width: 100%; 
     }
+
     .name {
         position: absolute; 
         left: 60px; 
         top: 0;
         font-size: 20px; 
     }
+
     .first-list {
         position: absolute; 
          left: 200px; 
          margin: 0;
     }
+
     .first-list li {
         font-size: 12px; 
     }
+
     .try-relative {
         position: absolute; 
         top: 0; 
@@ -284,54 +300,66 @@ nav.hide {
         height: 50px; 
         width: 800px; 
     }
+
+    #face-picture {
+        width: 29%; 
+        margin-right: 20px; 
+    }
+
     .mark {
-        width: 33%; 
+        width: calc(100%/3); 
         float: left; 
         display: inline-block;
         padding-right: 15px; 
     }
 
   .search {
-        width: 33%; 
+        width: calc(100%/3); 
         display: inline-block;
         padding-right: 15px; 
         float: left; 
     }  
+
     .travel {
-        width: 33%; 
+        width: calc(100%/3); 
         float: right; 
         clear: right; 
         display: inline-block;
         padding-right: 15px;  
     }
+
     .spots {
-        width: 33%; 
+        width: calc(100%/3); 
         float: left; 
         clear: left; 
         display: inline-block;
         padding-right: 15px;  
     }
+
     .photo {
-        width: 33%; 
+        width: calc(100%/3); 
         float: left; 
         display: inline-block;
         padding-right: 15px;  
     }
+
     .calc {
-        width: 33%; 
+        width: calc(100%/3); 
         float: right; 
         display: inline-block;
         padding-right: 15px;  
     }
+
+    .pic {
+        width: 900px; 
+    }
+
     .cl-skills {
         background-color: yellow; 
         width: 100%; 
         margin-top: 0; 
     }
-    .img-skills {
-        height: 200px; 
-        width: 200px; 
-    }
+
     .skills {
         margin-top: 900px; 
     }  

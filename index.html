@@ -5,9 +5,8 @@
         <title>Mobile First Responsive Layout: Project 2</title>
         <link rel = "stylesheet" href = "css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">   
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">             
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -25,17 +24,18 @@
                 </nav>
             </div><hr>
 
-            
-            <img src="css/images/responsive-layout-profile.png" class="pic face-picture" alt="Cute picture of a face" />
-                <div class="paragraph paragraph-change">
+            <div id="face">
+                <img src="css/images/responsive-layout-profile.png" class="face-picture" alt="Cute picture of a face" />
+            </div>   
+            <div class="paragraph paragraph-change">
                     <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished 
                     a degree in front-end web development
                     at Treehouse and am excited to put all my skills to use!</p>
-                </div>
+            </div>
         
-                <div class="divPortfolio">
-                    <h2 class="childPort uppercase" id="portfolio">Portfolio</h2>
-                </div>
+            <div class="divPortfolio">
+                <h2 class="childPort uppercase" id="portfolio">Portfolio</h2>
+            </div>
         
             <div class="mark">
                 <img src="css/images/portfolio-1.png" class="pic imgMarketing" alt="Picture of marketing">
@@ -86,13 +86,15 @@
                     </div>
             </div>
         
-            <div class="skills">
-                <img src="css/images/strong_arm.png" id="arm" alt="image of strong arm">
+            <div class="skills clearfix">
+                <div id="arm">
+                    <img src="css/images/strong_arm.png" class="strong-arm" alt="image of strong arm">
+                </div>
                 <h2 id="skills" class="uppercase">Skills in the Future</h2>
             </div>
 
             <div class="second-list clearfix">
-                <ul class="uppercase">
+                <ul class="uppercase" id="skills-list">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Beginner-JavaScript</li>
@@ -101,7 +103,6 @@
                     <li>Piano</li>
                 </ul>
             </div>
-            
 
             <div class="contact clearfix" id="contact">
                 <h2 class="uppercase">Contact</h2>
@@ -111,7 +112,6 @@
                 <hr>
             </div>
 
-        
             <footer>
                 <div class="footer clearfix">
                     <p class="classLeft">Lisa Walters</p>
@@ -128,11 +128,6 @@
                 </nav>
             </footer>
         
-
-
-    
-
-
         </div>
     </body>
 </html>
