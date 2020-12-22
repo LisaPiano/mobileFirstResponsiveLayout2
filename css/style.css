@@ -234,10 +234,12 @@ Media Queries
 .classRight {
     display: none; 
 }
+
 .classLeft {
     width: 60%; 
     margin-top: 40px; 
 }
+
 .repeat-list {
     display: inline-block; 
 }
