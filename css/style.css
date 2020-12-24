@@ -75,6 +75,7 @@ Class and ID     Layout Styles
     max-width: 100%; 
     display: inline-block; 
 }
+
 .strong-arm {
     width: 40%; 
 }
@@ -260,8 +261,6 @@ Media Queries
     font-size: 18px; 
     padding-right: 20px; 
 }
-
-
 }
 
 /*========================================================================*/
